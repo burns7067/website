@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      /* Gradient background */
+      background: linear-gradient(to bottom right, #1e3a8a, #3b82f6);
+      background-attachment: fixed;
+      color: white;
+    }
+  </style>
+</head>
+<body class="text-white-100">
+  <!-- Navbar -->
+  <nav class="bg-black/70 backdrop-blur-md shadow sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">MyPortfolio</h1>
+      <ul class="hidden md:flex space-x-6 font-medium">
+        <li><a href="#home" class="hover:text-white-600">Home</a></li>
+        <li><a href="#about" class="hover:text-white-600">About</a></li>
+        <li><a href="#resume" class="hover:text-white-600">Resume</a></li>
+        <li><a href="#projects" class="hover:text-white-600">Projects</a></li>
+        <li><a href="#organizations" class="hover:text-white-600">Organizations</a></li>
+        <li><a href="#contact" class="hover:text-white-600">Contact</a></li>
+      </ul>
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.75h16.5m-16.5 6.5h16.5m-16.5 6.5h16.5" />
+        </svg>
+      </button>
+    </div>
+    <ul id="mobile-menu" class="md:hidden hidden flex-col space-y-2 px-4 pb-4 bg-white/80 backdrop-blur-md">
+      <li><a href="#home" class="block hover:text-blue-600">Home</a></li>
+      <li><a href="#about" class="block hover:text-blue-600">About</a></li>
+      <li><a href="#resume" class="block hover:text-blue-600">Resume</a></li>
+      <li><a href="#projects" class="block hover:text-blue-600">Projects</a></li>
+      <li><a href="#organizations" class="block hover:text-blue-600">Organizations</a></li>
+      <li><a href="#contact" class="block hover:text-blue-600">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="text-center py-24">
+    <h2 class="text-5xl font-bold mb-4">Hi, I'm Devin Burns</h2>
+    <p class="text-lg mb-6">A passionate Computer Science student and aspiring developer</p>
+    <a href="#projects" class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition">View My Work</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-4xl mx-auto py-16 px-4 text-center">
+    <h3 class="text-3xl font-bold mb-6 text-white-400">About Me</h3>
+    <p class="text-lg leading-relaxed">
+      I'm a computer science enthusiast who loves building creative, efficient, and impactful software. I enjoy learning new technologies, working on personal projects, and finding ways to use code to solve real-world problems.
+    </p>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="max-w-4xl mx-auto py-16 px-4 text-center">
+    <h3 class="text-3xl font-bold mb-6 text-white-400">Resume</h3>
+    <p class="text-lg leading-relaxed">Download my resume below to learn more about my education, experience, and technical skills.</p>
+    <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition mt-6 inline-block">Download Resume</a>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="max-w-6xl mx-auto py-16 px-4 text-center">
+    <h3 class="text-3xl font-bold mb-10 text-white-400">Projects</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-black/80 backdrop-blur-md shadow rounded-xl p-6 text-black-800">
+        <h4 class="text-xl font-semibold mb-2 text-blue-600">Treasure Island Game</h4>
+        <p class="mb-4">A Java-based command-line adventure game where players explore an island to find hidden treasure.</p>
+        <a href="#" class="text-blue-600 hover:underline">View Details →</a>
+      </div>
+      <div class="bg-black/80 backdrop-blur-md shadow rounded-xl p-6 text-black-800">
+      <h4 class="text-xl font-semibold mb-2 text-blue-600">Web History Project</h4>
+        <p class="mb-4">A research-based web project exploring the Fall of the Eastern Roman Empire with interactive visuals.</p>
+        <a href="#" class="text-blue-600 hover:underline">View Details →</a>
+      </div>
+      <div class="bg-black/80 backdrop-blur-md shadow rounded-xl p-6 text-black-800">
+        <h4 class="text-xl font-semibold mb-2 text-blue-600">Python Pattern Generator</h4>
+        <p class="mb-4">A fun Python script that prints creative ASCII art patterns in the console.</p>
+        <a href="#" class="text-blue-600 hover:underline">View Details →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Organizations Section -->
+  <section id="organizations" class="max-w-4xl mx-auto py-16 px-4 text-center">
+    <h3 class="text-3xl font-bold mb-6 text-white-400">Organizations</h3>
+    <p class="text-lg leading-relaxed">I’m proud to be involved with student tech groups and professional organizations that promote learning, leadership, and innovation.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-4xl mx-auto py-16 px-4 text-center">
+    <h3 class="text-3xl font-bold mb-6 text-white-400">Contact Me</h3>
+    <p class="text-lg mb-8">@dbur6879@vsu.edu.org. Feel free to reach out!</p>
+    <a href="mailto:devinburns@example.com" class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition">Say Hello</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black/70 backdrop-blur-md text-gray-300 py-6 text-center">
+    <p>&copy; 2025 Devin Burns. All rights reserved.</p>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
